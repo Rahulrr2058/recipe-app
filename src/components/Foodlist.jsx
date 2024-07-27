@@ -1,15 +1,12 @@
 import FoodItem from "./Fooditem"
 
-function FoodList({foodData , setFoodId}){
-    return(
-        <div>
-            {foodData.map((food)=>
-       (
-         <FoodItem setFoodId={setFoodId} key={food.id} food={food}/>
-       )
-      )}
-
-        </div>
-    )
+function FoodList({ foodData = [], setFoodId }) {
+  return (
+    <div>
+      {foodData.map((food) => (
+        <FoodItem setFoodId={setFoodId} key={food.id} food={food} />
+      ))}
+    </div>
+  );
 }
 export default FoodList

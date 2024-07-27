@@ -8,7 +8,7 @@ import FoodDetails from './components/FoodDetails';
 import "./App.css"
 function App() {
   const [foodData, setFoodData] = useState([]);
-  const [foodId, setFoodId]= useState("715497")
+  const [foodId, setFoodId] = useState("716429");
   return (
    
     <div>
